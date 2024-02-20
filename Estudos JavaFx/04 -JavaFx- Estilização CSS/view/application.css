@@ -1,0 +1,17 @@
+.root{
+    -fx-background-color: #B8732F
+}
+.label{
+    -fx-font-size:20;
+    -fx-font-family:"Lucida Console";
+    -fx-text-fill:"brown";
+    -fx-alignment:center;
+}
+
+#titleLabel{
+    -fx-font-size: 60;
+}
+
+#textLabel{
+    -fx-font-family:"Impact";
+}

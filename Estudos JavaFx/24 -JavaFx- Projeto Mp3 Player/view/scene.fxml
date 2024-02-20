@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="126.0" prefWidth="642.0" style="-fx-background-color: #111111;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller">
+   <children>
+      <Label fx:id="songLabel" alignment="CENTER" layoutY="6.0" prefHeight="25.0" prefWidth="642.0" textAlignment="CENTER" textFill="#5ad0c0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ProgressBar fx:id="songProgressBar" layoutY="45.0" prefHeight="18.0" prefWidth="642.0" progress="0.0" />
+      <Button fx:id="playButton" layoutX="32.0" layoutY="79.0" mnemonicParsing="false" onAction="#playMedia" prefHeight="31.0" prefWidth="61.0" text="PLAY" />
+      <Button fx:id="pauseButton" layoutX="100.0" layoutY="79.0" mnemonicParsing="false" onAction="#pauseMedia" prefHeight="31.0" prefWidth="61.0" text="PAUSE" />
+      <Button fx:id="resetButton" layoutX="170.0" layoutY="79.0" mnemonicParsing="false" onAction="#resetMedia" prefHeight="31.0" prefWidth="61.0" text="RESET" />
+      <Button fx:id="previousButton" layoutX="241.0" layoutY="79.0" mnemonicParsing="false" onAction="#previousMedia" prefHeight="31.0" prefWidth="61.0" text="PREVIOUS">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Button>
+      <Button fx:id="nextButton" layoutX="310.0" layoutY="79.0" mnemonicParsing="false" onAction="#nextMedia" prefHeight="31.0" prefWidth="61.0" text="NEXT" />
+      <ComboBox fx:id="speedBox" layoutX="379.0" layoutY="79.0" onAction="#changeSpeed" prefHeight="31.0" prefWidth="79.0" promptText="SPEED" />
+      <Slider fx:id="volumeSlider" layoutX="470.0" layoutY="88.0" prefHeight="14.0" prefWidth="172.0" value="50.0" />
+   </children>
+</AnchorPane>
